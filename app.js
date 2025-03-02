@@ -25,3 +25,5 @@ app.use("/api/tasks", taskRouter);
 app.listen(port, () => {
  console.log("App is listening at port: " + port);
 });
+
+export default app;
