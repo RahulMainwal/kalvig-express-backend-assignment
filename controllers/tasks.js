@@ -5,8 +5,6 @@ import ApiResponse from "../utils/ApiResponse.js";
 export const getTasksController = async (req, res) => {
  const data = localDb.getTodo();
 
- console.log(data);
-
  return res
   .status(200)
   .json(ApiResponse(200, data, "Get tasks successfully!", true));
